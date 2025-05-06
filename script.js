@@ -7,7 +7,7 @@
       text_speak.rate = 1.1;
       text_speak.pitch = 1;
       text_speak.volume = 1;
-      text_speak.lang = "hi-IN";
+      text_speak.lang = "hi-GB";
       window.speechSynthesis.speak(text_speak);
     }
 
@@ -28,7 +28,7 @@
       responseBox.textContent = "Speech Recognition not supported.";
     } else {
       const recognition = new SpeechRecognition();
-      recognition.lang = "hi-in";
+      recognition.lang = "hi-GB";
       recognition.continuous = false;
       recognition.interimResults = false;
 
