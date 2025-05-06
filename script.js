@@ -28,7 +28,7 @@
       responseBox.textContent = "Speech Recognition not supported.";
     } else {
       const recognition = new SpeechRecognition();
-      recognition.lang = "hi-GB";
+      recognition.lang = "en-GB";
       recognition.continuous = false;
       recognition.interimResults = false;
 
