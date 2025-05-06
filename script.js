@@ -14,7 +14,7 @@
     function wishMe() {
       let hours = new Date().getHours();
       if (hours < 12) speak("Good morning");
-      else if (hours < 17) speak("Good afternoon");
+      else if (hours < 4) speak("Good afternoon");
       else speak("Good evening");
     }
 
@@ -28,7 +28,7 @@
       responseBox.textContent = "Speech Recognition not supported.";
     } else {
       const recognition = new SpeechRecognition();
-      recognition.lang = "en-US";
+      recognition.lang = "hi-in";
       recognition.continuous = false;
       recognition.interimResults = false;
 
@@ -66,7 +66,7 @@
       } else if (transcript.includes("mood")) {
         speak("Thanks for asking. I am feeling great!");
       } else if (transcript.includes("name")) {
-        speak("I am Jarvise, your assistant.");
+        speak("I am Jarvis, your assistant.");
       } else if (transcript.includes("open google")) {
         speak("Opening Google...");
         window.open("https://www.google.com/", "_blank");
